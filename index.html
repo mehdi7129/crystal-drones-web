@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crystal Drones SAV - Application de gestion</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            color: white;
+        }
+        
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .subtitle {
+            font-size: 1.5em;
+            opacity: 0.95;
+        }
+        
+        .hero {
+            background: white;
+            border-radius: 20px;
+            padding: 50px;
+            margin: 40px auto;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .feature {
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .feature-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+        
+        .feature h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+        
+        .cta {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            display: inline-block;
+            margin: 20px 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        
+        .cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        
+        .secondary-cta {
+            background: transparent;
+            border: 3px solid #667eea;
+            color: #667eea;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: white;
+        }
+        
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            opacity: 0.9;
+        }
+        
+        footer a:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+        
+        .app-preview {
+            max-width: 300px;
+            margin: 30px auto;
+        }
+        
+        .app-preview img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+            .hero {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚁 Crystal Drones SAV</h1>
+            <p class="subtitle">L'application de gestion SAV pour professionnels du drone</p>
+        </header>
+        
+        <div class="hero">
+            <h2>Gérez vos interventions SAV efficacement</h2>
+            <p style="font-size: 1.2em; margin: 20px 0; color: #666;">
+                Application iOS dédiée aux techniciens Crystal Drones pour le suivi et la gestion complète des interventions SAV
+            </p>
+            
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">📱</div>
+                    <h3>Interface Intuitive</h3>
+                    <p>Application native iOS optimisée pour iPhone et iPad</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">🔧</div>
+                    <h3>Gestion Complète</h3>
+                    <p>Suivi des drones, interventions, et rapports techniques</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">☁️</div>
+                    <h3>Synchronisation Cloud</h3>
+                    <p>Données synchronisées en temps réel avec le serveur</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Sécurisé</h3>
+                    <p>Authentification sécurisée et chiffrement des données</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">📊</div>
+                    <h3>Tableaux de Bord</h3>
+                    <p>Statistiques et rapports détaillés des interventions</p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">📸</div>
+                    <h3>Documentation Photo</h3>
+                    <p>Capture et stockage des photos d'intervention</p>
+                </div>
+            </div>
+            
+            <div style="margin: 40px 0;">
+                <a href="#" class="cta">Bientôt sur l'App Store</a>
+                <a href="privacy.html" class="cta secondary-cta">Politique de Confidentialité</a>
+            </div>
+            
+            <div style="margin-top: 40px; padding-top: 40px; border-top: 1px solid #eee;">
+                <h3 style="color: #667eea; margin-bottom: 20px;">Fonctionnalités Principales</h3>
+                <ul style="text-align: left; max-width: 600px; margin: 0 auto; line-height: 2;">
+                    <li>✅ Gestion de plus de 1000 drones</li>
+                    <li>✅ Suivi détaillé des interventions SAV</li>
+                    <li>✅ Historique complet des réparations</li>
+                    <li>✅ Gestion des profils techniciens</li>
+                    <li>✅ Export des rapports PDF</li>
+                    <li>✅ Mode hors ligne disponible</li>
+                    <li>✅ Notifications en temps réel</li>
+                    <li>✅ Support multi-utilisateurs</li>
+                </ul>
+            </div>
+        </div>
+        
+        <footer>
+            <p style="margin-bottom: 20px;">© 2025 Crystal Drones SAV - Tous droits réservés</p>
+            <div>
+                <a href="privacy.html">Politique de Confidentialité</a>
+                <a href="mailto:support@crystal-drones.com">Contact</a>
+                <a href="https://crystal-drones.duckdns.org">Accès Technicien</a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
