@@ -82,18 +82,68 @@
         </ul>
 
         <h2>5. Sécurité des données</h2>
-        <p>Nous mettons en œuvre des mesures de sécurité appropriées pour protéger vos informations :</p>
+        <p>Nous mettons en œuvre des mesures de sécurité avancées pour protéger vos informations :</p>
+        
+        <h3>Chiffrement et Certificats SSL/TLS</h3>
         <ul>
-            <li>Chiffrement HTTPS pour toutes les communications</li>
-            <li>Authentification sécurisée avec tokens</li>
-            <li>Stockage sécurisé sur des serveurs protégés</li>
-            <li>Accès restreint aux données personnelles</li>
+            <li><strong>HTTPS obligatoire :</strong> Toutes les communications sont chiffrées via SSL/TLS</li>
+            <li><strong>Validation des certificats :</strong> Vérification personnalisée des certificats SSL pour crystal-drones.duckdns.org</li>
+            <li><strong>Certificate Pinning :</strong> Validation renforcée contre les attaques man-in-the-middle</li>
+            <li><strong>App Transport Security (ATS) :</strong> Configuration iOS stricte interdisant les connexions non sécurisées</li>
+        </ul>
+        
+        <h3>Authentification Multi-Niveaux</h3>
+        <ul>
+            <li><strong>Tokens JWT sécurisés :</strong> Authentification par tokens avec expiration automatique</li>
+            <li><strong>Biométrie (Face ID/Touch ID) :</strong> Authentification biométrique pour un accès rapide et sécurisé</li>
+            <li><strong>iOS Keychain :</strong> Stockage chiffré des identifiants dans le trousseau sécurisé iOS</li>
+            <li><strong>Refresh automatique :</strong> Renouvellement automatique des tokens expirés</li>
+        </ul>
+        
+        <h3>Protection des Données Locales</h3>
+        <ul>
+            <li><strong>Chiffrement iOS natif :</strong> Toutes les données locales sont chiffrées au repos par iOS</li>
+            <li><strong>Core Data sécurisé :</strong> Base de données locale protégée par le système iOS</li>
+            <li><strong>Keychain Services :</strong> Utilisation exclusive du trousseau iOS pour les données sensibles</li>
+            <li><strong>CryptoKit Framework :</strong> Utilisation des API cryptographiques modernes d'Apple</li>
+        </ul>
+        
+        <h3>Sécurité Réseau</h3>
+        <ul>
+            <li><strong>Sessions éphémères :</strong> Pas de mise en cache des données sensibles</li>
+            <li><strong>Timeout de connexion :</strong> Déconnexion automatique après inactivité</li>
+            <li><strong>Détection de proxy :</strong> Validation des connexions réseau</li>
+            <li><strong>Headers sécurisés :</strong> Utilisation de Bearer tokens dans les en-têtes HTTP</li>
+        </ul>
+        
+        <h3>Sécurité de l'Application</h3>
+        <ul>
+            <li><strong>Détection de jailbreak :</strong> Vérification de l'intégrité du dispositif</li>
+            <li><strong>Validation de signature :</strong> Vérification de l'intégrité de l'application</li>
+            <li><strong>SHA256 Hashing :</strong> Hachage sécurisé pour la vérification des mots de passe</li>
+            <li><strong>Nettoyage sécurisé :</strong> Suppression complète des données lors de la déconnexion</li>
         </ul>
 
-        <h2>6. Stockage des données</h2>
-        <p>Vos données sont stockées sur nos serveurs sécurisés et conservées aussi longtemps que nécessaire pour fournir nos services. Vous pouvez demander la suppression de vos données à tout moment.</p>
+        <h2>6. Frameworks de Sécurité iOS</h2>
+        <p>L'application utilise les frameworks de sécurité officiels d'Apple :</p>
+        <ul>
+            <li><strong>Security.framework :</strong> Gestion sécurisée du trousseau iOS</li>
+            <li><strong>LocalAuthentication.framework :</strong> Intégration Face ID et Touch ID</li>
+            <li><strong>CryptoKit.framework :</strong> Opérations cryptographiques modernes</li>
+            <li><strong>Network.framework :</strong> Sécurité des connexions réseau</li>
+        </ul>
+        
+        <h2>7. Stockage des données</h2>
+        <p>Les données sont stockées de manière sécurisée :</p>
+        <ul>
+            <li><strong>Serveur Directus :</strong> Backend sécurisé avec authentification JWT</li>
+            <li><strong>PostgreSQL :</strong> Base de données avec chiffrement des mots de passe (Argon2)</li>
+            <li><strong>Docker :</strong> Conteneurisation isolée des services</li>
+            <li><strong>Accès restreint :</strong> Seuls les employés autorisés peuvent accéder aux données</li>
+        </ul>
+        <p>Conservation : Les données sont conservées pendant la durée d'emploi et peuvent être supprimées sur demande.</p>
 
-        <h2>7. Vos droits</h2>
+        <h2>8. Vos droits</h2>
         <p>Conformément au RGPD, vous avez le droit de :</p>
         <ul>
             <li>Accéder à vos données personnelles</li>
@@ -103,10 +153,10 @@
             <li>Demander la portabilité de vos données</li>
         </ul>
 
-        <h2>8. Modifications de cette politique</h2>
+        <h2>9. Modifications de cette politique</h2>
         <p>Nous nous réservons le droit de modifier cette politique de confidentialité. Les modifications seront publiées sur cette page avec une date de mise à jour.</p>
 
-        <h2>9. Contact</h2>
+        <h2>10. Contact</h2>
         <div class="contact">
             <p><strong>Pour toute question concernant cette politique de confidentialité, contactez-nous :</strong></p>
             <p>Email : privacy@crystal-drones.com<br>
